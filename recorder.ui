@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Recorder</class>
+ <widget class="QMainWindow" name="Recorder">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>451</width>
+    <height>219</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Recorder</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/images/images/recorder.jpg</normaloff>:/images/images/recorder.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: #fff;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pauseButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>50</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #f2f2f2;
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Pause</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="recordButton">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>10</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #f2f2f2;
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Record</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonBack">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>130</y>
+      <width>91</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #f2f2f2;
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Back to Menu</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>431</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="levelsLayout">
+     <property name="spacing">
+      <number>2</number>
+     </property>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="outputButton">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>90</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #f2f2f2;
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Output...</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>331</width>
+      <height>152</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="styleSheet">
+        <string notr="true">background: #f2f2f2;
+border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string> Sample rate:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="audioDeviceBox">
+       <property name="styleSheet">
+        <string notr="true">background: #f2f2f2;
+border-radius: 10px;</string>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="styleSheet">
+        <string notr="true">background: #f2f2f2;
+border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string> Audio Codec:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="styleSheet">
+        <string notr="true">background: #f2f2f2;
+border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string> Input Device:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="styleSheet">
+        <string notr="true">background: #f2f2f2;
+border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string> File Container:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="containerBox">
+       <property name="styleSheet">
+        <string notr="true">background: #f2f2f2;
+border-radius: 10px;</string>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="sampleRateBox">
+       <property name="styleSheet">
+        <string notr="true">background: #f2f2f2;
+border-radius: 10px;</string>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="audioCodecBox">
+       <property name="styleSheet">
+        <string notr="true">background: #f2f2f2;
+border-radius: 10px;</string>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="styleSheet">
+        <string notr="true">background: #f2f2f2;
+border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string> Channels:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QComboBox" name="channelsBox">
+       <property name="styleSheet">
+        <string notr="true">background: #f2f2f2;
+border-radius: 10px;</string>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
